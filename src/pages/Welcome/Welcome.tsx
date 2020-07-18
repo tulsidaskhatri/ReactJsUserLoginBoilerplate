@@ -1,14 +1,7 @@
-import React, { useEffect, useState } from "react";
-import api from "../../api";
+import React from 'react';
 
 const Welcome = () => {
-  const [username, setUsername] = useState("");
-  useEffect(() => {
-    api.welcome((response: any) => {
-      setUsername(response.user.email);
-    });
-  });
-  return <div>Welcome {username}</div>;
+    return <div>Welcome</div>;
 };
 
 export default Welcome;
